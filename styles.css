@@ -65,15 +65,15 @@ header {
   margin: 4px 0;
 }
 
-.hero-banner {
+/* .hero-banner {
   background-image: url('./images/banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 section.relative {
-  background-image: url('./images/banner.png');
+  background-image: url('./images/banner.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
