@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Transformá tu vida emocional a través de constelaciones familiares. Conectá con tu bienestar desde el origen." />
+  <title>Sanación Emocional Sistémica</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-green-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <a href="#" class="text-green-800 font-bold text-2xl">Constelaciones</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#beneficios" class="text-gray-700 hover:text-green-600">¿Qué resuelve?</a>
+        <a href="#testimonios" class="text-gray-700 hover:text-green-600">Testimonios</a>
+        <a href="#cursos" class="text-gray-700 hover:text-green-600">Cursos</a>
+        <a href="#proceso" class="text-gray-700 hover:text-green-600">Cómo funciona</a>
+        <a href="#contacto" class="text-gray-700 hover:text-green-600">Contacto</a>
+      </nav>
+      <button class="md:hidden text-green-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        ☰
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#beneficios" class="block py-2 text-gray-700 hover:text-green-600">¿Qué resuelve?</a>
+      <a href="#testimonios" class="block py-2 text-gray-700 hover:text-green-600">Testimonios</a>
+      <a href="#cursos" class="block py-2 text-gray-700 hover:text-green-600">Cursos</a>
+      <a href="#proceso" class="block py-2 text-gray-700 hover:text-green-600">Cómo funciona</a>
+      <a href="#contacto" class="block py-2 text-gray-700 hover:text-green-600">Contacto</a>
+    </div>
+  </header>
+
+<!-- <section class="banner">
+  <img src="./images/banner.png" alt="Banner armonía y paz">
+</section> -->
+
+  <!-- Hero -->
+<section class="relative text-center py-20 px-4">
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <div class="relative z-10">
+    <h1 class="text-4xl md:text-5xl font-semibold text-white mb-4">¿Sentís que arrastrás cargas emocionales que no te pertenecen?</h1>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto text-white mb-8">Liberate de patrones familiares repetitivos y comenzá un camino de bienestar interior. Las constelaciones familiares pueden ayudarte.</p>
+    <a href="#contacto" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl text-lg transition">Reservá tu sesión</a>
+  </div>
+</section>
+
+
+  <!-- Beneficios / Problemas que resuelve -->
+  <section id="beneficios" class="py-16 px-4 bg-green-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-8">¿Qué podés sanar con esta terapia?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div>
+          <h3 class="text-xl font-semibold text-green-700">Relaciones familiares conflictivas</h3>
+          <p class="text-gray-700 mt-2">Saná vínculos con padres, hijos, hermanos o parejas desde su raíz sistémica.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-green-700">Cargas emocionales heredadas</h3>
+          <p class="text-gray-700 mt-2">Liberate de emociones que no son tuyas, pero que te condicionan.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-green-700">Patrones repetitivos</h3>
+          <p class="text-gray-700 mt-2">Rompe ciclos de abandono, fracaso o enfermedad que se repiten generación tras generación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-12">Personas que transformaron su vida</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <blockquote class="bg-green-100 p-6 rounded-xl shadow-sm">
+          <p class="italic">“Sentí que por primera vez entendí lo que me estaba pasando con mi mamá. La sesión me permitió soltar mucho dolor.”</p>
+          <footer class="mt-4 text-right font-semibold text-green-700">— Testimonio 1</footer>
+        </blockquote>
+        <blockquote class="bg-green-100 p-6 rounded-xl shadow-sm">
+          <p class="italic">“Las constelaciones me ayudaron a superar una tristeza profunda que arrastraba desde la infancia.”</p>
+          <footer class="mt-4 text-right font-semibold text-green-700">— Testimonio 2</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Cursos -->
+  <section id="cursos" class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-8">Cursos disponibles</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-green-50 p-4 rounded-xl shadow">
+          <img src="img/curso1.jpg" alt="Curso Individual" class="rounded mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Curso Individual</h3>
+          <p class="text-gray-700 mt-2">Transformación personal 1 a 1. Ideal para quienes buscan profundizar en su proceso individual.</p>
+        </div>
+        <div class="bg-green-50 p-4 rounded-xl shadow">
+          <img src="img/curso2.jpg" alt="Curso Grupal" class="rounded mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Curso Grupal</h3>
+          <p class="text-gray-700 mt-2">Vivir el proceso con otros potencia los resultados. Espacio compartido y contenido complementario.</p>
+        </div>
+        <div class="bg-green-50 p-4 rounded-xl shadow">
+          <img src="img/curso3.jpg" alt="Taller intensivo" class="rounded mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Taller intensivo</h3>
+          <p class="text-gray-700 mt-2">Jornadas intensivas para desbloqueos profundos. Cupos limitados y en fechas especiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso / Cómo funciona -->
+  <section id="proceso" class="py-16 px-4 bg-green-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-8">¿Cómo es el proceso?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold text-green-700">1. Identificación</h3>
+          <p class="mt-2 text-gray-700">Explorás tu tema principal a trabajar, sin necesidad de contar toda tu historia.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold text-green-700">2. Constelación</h3>
+          <p class="mt-2 text-gray-700">Se realiza la representación simbólica de tu sistema familiar, para observar dinámicas ocultas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold text-green-700">3. Liberación</h3>
+          <p class="mt-2 text-gray-700">A través de nuevos órdenes, encontrás paz, comprensión y alivio emocional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Llamado a la acción -->
+  <section class="py-20 bg-gradient-to-r from-green-200 to-blue-100 text-center">
+    <h2 class="text-3xl font-bold text-green-900 mb-4">Sentí el alivio de sanar desde el origen</h2>
+    <p class="text-xl mb-6 text-gray-800">Solicitá tu primera sesión y comenzá a transformar tu historia familiar.</p>
+    <a href="https://wa.me/xxxxxxxxxxx" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl text-lg transition">Hablar por WhatsApp</a>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 px-4 bg-white">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Formulario de contacto</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full border border-green-300 p-3 rounded" />
+        <input type="email" name="email" placeholder="Tu correo electrónico" required class="w-full border border-green-300 p-3 rounded" />
+        <textarea name="mensaje" rows="5" placeholder="Contanos qué te gustaría trabajar" class="w-full border border-green-300 p-3 rounded"></textarea>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl transition">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-green-100 text-green-800 text-center text-sm">
+    <div class="mb-2">
+      <a href="#" class="mx-2 hover:underline">Instagram</a> |
+      <a href="#" class="mx-2 hover:underline">Facebook</a> |
+      <a href="#" class="mx-2 hover:underline">YouTube</a>
+    </div>
+    © 2025 Nombre Profesional. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
