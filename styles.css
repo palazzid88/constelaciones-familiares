@@ -79,6 +79,14 @@ section.relative {
   background-repeat: no-repeat;
 }
 
+#sobre-mi img {
+  transition: transform 0.3s ease;
+}
+
+#sobre-mi img:hover {
+  transform: scale(1.05);
+}
+
 
 
 @media (max-width: 768px) {
