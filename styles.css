@@ -1,5 +1,6 @@
 /* styles.css */
 
+/* Reset y base */
 * {
   margin: 0;
   padding: 0;
@@ -13,15 +14,17 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  position: fixed;
-  width: 100%;
+  position: sticky; /* cambié fixed por sticky para compatibilidad con tailwind */
   top: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 1100; /* subí un poco para que quede sobre el contenido */
 }
 
+/* Navbar */
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,10 +55,12 @@ header {
   color: #91BDA3;
 }
 
+/* Menú hamburguesa */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1200; /* que quede arriba */
 }
 
 .hamburger span {
@@ -65,13 +70,28 @@ header {
   margin: 4px 0;
 }
 
-/* .hero-banner {
-  background-image: url('./images/banner.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+/* Menú móvil */
+.nav-links {
+  transition: all 0.3s ease;
+}
 
+.nav-links.hidden {
+  display: none !important;
+}
+
+.nav-links.active {
+  display: flex !important;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+  z-index: 1050;
+}
+
+/* Fondo hero */
 section.relative {
   background-image: url('./images/banner.webp');
   background-size: cover;
@@ -79,6 +99,7 @@ section.relative {
   background-repeat: no-repeat;
 }
 
+/* Sobre mi - imagen */
 #sobre-mi img {
   transition: transform 0.3s ease;
 }
@@ -87,8 +108,7 @@ section.relative {
   transform: scale(1.05);
 }
 
-
-
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -243,4 +263,10 @@ footer a {
 
 footer a:hover {
   color: #91BDA3;
+}
+
+/* Animate.css override mínimo para que animaciones no desaparezcan rápido */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
