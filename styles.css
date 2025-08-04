@@ -1,5 +1,18 @@
 /* styles.css */
 
+/* ===================== */
+/* 🎨 Variables de color */
+/* ===================== */
+:root {
+  --color-amarillo: #fceeb5;
+  --color-naranja: #fdd5b1;
+  --color-rojo: #f7b5ac;
+  --color-fondo-claro: #fffaf5;
+  --color-texto-principal: #3a3a3a;
+  --color-hover: #e27d60;
+}
+
+
 /* Reset y base */
 * {
   margin: 0;
@@ -9,8 +22,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f5f0;
-  color: #333;
+  background-color: var(--color-fondo);
+  color: var(--color-principal-texto);
   line-height: 1.6;
 }
 
@@ -18,10 +31,10 @@ body {
 header {
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  position: sticky; /* cambié fixed por sticky para compatibilidad con tailwind */
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1100; /* subí un poco para que quede sobre el contenido */
+  z-index: 1100;
 }
 
 /* Navbar */
@@ -36,7 +49,7 @@ header {
 
 .navbar h1 {
   font-size: 1.5rem;
-  color: #64766D;
+  color: var(--color-principal-texto);
 }
 
 .nav-links {
@@ -46,13 +59,13 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-principal-texto);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #91BDA3;
+  color: var(--color-enlace-hover);
 }
 
 /* Menú hamburguesa */
@@ -60,13 +73,13 @@ header {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  z-index: 1200; /* que quede arriba */
+  z-index: 1200;
 }
 
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: #333;
+  background: var(--color-principal-texto);
   margin: 4px 0;
 }
 
@@ -150,7 +163,7 @@ section.relative {
 }
 
 .cta {
-  background-color: #91BDA3;
+  background-color: var(--color-rojo);
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -161,7 +174,7 @@ section.relative {
 }
 
 .cta:hover {
-  background-color: #769f88;
+  background-color: #e74c3c;
 }
 
 /* Section Styles */
@@ -174,7 +187,7 @@ section {
 section h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #5C7060;
+  color: var(--color-rojo);
 }
 
 section p {
@@ -190,7 +203,7 @@ section p {
 
 .curso {
   flex: 1 1 300px;
-  background: #fff;
+  background: var(--color-amarillo);
   border: 1px solid #eaeaea;
   border-radius: 8px;
   overflow: hidden;
@@ -229,7 +242,7 @@ section p {
 }
 
 .contact-form button {
-  background-color: #64766D;
+  background-color: var(--color-naranja);
   color: white;
   border: none;
   padding: 0.75rem;
@@ -239,12 +252,12 @@ section p {
 }
 
 .contact-form button:hover {
-  background-color: #4f5e56;
+  background-color: #e67e22;
 }
 
 /* Footer */
 footer {
-  background-color: #e6eae7;
+  background-color: var(--color-amarillo);
   padding: 2rem 20px;
   text-align: center;
 }
@@ -255,17 +268,17 @@ footer p {
 
 footer a {
   margin: 0 0.5rem;
-  color: #64766D;
+  color: var(--color-principal-texto);
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #91BDA3;
+  color: var(--color-enlace-hover);
 }
 
-/* Animate.css override mínimo para que animaciones no desaparezcan rápido */
+/* Animate.css override */
 .animate__animated {
   animation-duration: 1s;
   animation-fill-mode: both;
