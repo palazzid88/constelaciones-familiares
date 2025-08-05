@@ -187,7 +187,7 @@ section {
 section h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--color-rojo);
+  color:var(--color-texto-principal);
 }
 
 section p {
