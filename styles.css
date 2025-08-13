@@ -285,3 +285,26 @@ footer a:hover {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+
+ /* ========== WHATSAPP ICON ========== */
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
